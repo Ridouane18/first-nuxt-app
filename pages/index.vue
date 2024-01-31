@@ -1,13 +1,14 @@
-<template lang="">
-    <div>
-        <p>i'm at index page</p>
-    </div>
-</template>
-<script>
-export default {
-    
-}
+<script setup lang="ts">
+console.log("the index page");
 </script>
-<style lang="">
-    
-</style>
+
+<template>
+  <div class="page_container">
+    <p>i'm at index page</p>
+    <ClientOnly>
+      <TheExperience />
+    </ClientOnly>
+  </div>
+</template>
+
+<style></style>
